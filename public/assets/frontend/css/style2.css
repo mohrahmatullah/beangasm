@@ -1,0 +1,318 @@
+/* #CHECKBOX# */
+.containerRadio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmarkbox {
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 3px solid rgba(33,150,243, 0.5);
+  border-radius: 0.5rem;
+}
+
+/* On mouse-over, add a grey background color */
+.containerRadio:hover input ~ .checkmarkbox {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a white background */
+.containerRadio input:checked ~ .checkmarkbox {
+  background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerRadio input:checked ~ .checkmarkbox:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerRadio .checkmarkbox:after {
+  left: 15px;
+  top: 3px;
+  width: 15px;
+  height: 30px;
+  border: solid #2196F3;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* ##!CHECKBOX */
+
+            /* #CHECKBOX MOBILE# */
+            .containerRadioMobile {
+              display: block;
+              position: relative;
+              padding-left: 35px;
+              margin-bottom: 12px;
+              cursor: pointer;
+              font-size: 22px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+
+            /* Hide the browser's default checkbox */
+            .containerRadioMobile input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              height: 0;
+              width: 0;
+            }
+
+            /* Create a custom checkbox */
+            .checkmarkboxMobile {
+               position: absolute; 
+              top: 30px;
+              right: 15px;
+              height: 50px;
+              width: 50px;
+              background-color: white;
+              border: 3px solid rgba(33,150,243, 0.5);
+              border-radius: 0.5rem;
+            }
+
+            /* On mouse-over, add a grey background color */
+            .containerRadioMobile:hover input ~ .checkmarkboxMobile {
+              background-color: #ccc;
+            }
+
+            /* When the checkbox is checked, add a white background */
+            .containerRadioMobile input:checked ~ .checkmarkboxMobile {
+              background-color: white;
+            }
+
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmarkboxMobile:after {
+              content: "";
+              position: absolute;
+              display: none;
+            }
+
+            /* Show the checkmark when checked */
+            .containerRadioMobile input:checked ~ .checkmarkboxMobile:after {
+              display: block;
+            }
+
+            /* Style the checkmark/indicator */
+            .containerRadioMobile .checkmarkboxMobile:after {
+              left: 15px;
+              top: 3px;
+              width: 15px;
+              height: 30px;
+              border: solid #2196F3;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+            /* ##!CHECKBOX */
+
+/* #RADIOCHECK# */
+.containerAlamat {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerAlamat input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border:1px solid #ff6a27;
+}
+
+/* On mouse-over, add a grey background color */
+.containerAlamat:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerAlamat input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerAlamat input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerAlamat .checkmark:after {
+  top: 8px;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff6a27;
+}
+          /* #!RADIOCHECK# */
+
+/* #qtyNumber# */
+.qtyNumber{
+  height: 3rem !important; 
+  width: 2rem !important; 
+  opacity: 100% !important; 
+  position: relative !important;
+  text-align: center;
+  background-color: white;  
+  
+}
+
+/* TanggalArtikelBlogMobile */
+.tgl-blg-mbl{
+  position: fixed; 
+  background-color: #fafafa;
+  color: #4b4b4b;
+  padding: 0px 0px;
+  text-transform: uppercase;
+  font-size: 9px;
+  position: relative;
+  border-radius: 15px;
+}
+/* BackgroundBlogMobile */
+.bg-bm{
+  background: #ffffff ;
+  border: 1px solid rgba(0, 0, 0, 0.12); 
+  padding: 10px; 
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12); 
+  margin-left: -1rem;
+}
+
+div.limitword {
+  white-space: nowrap;
+  width: auto;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+/* DropdownContactMobile */
+.dd-mbl{
+  text-align: center; 
+  font-size: 10pt;
+}
+/* Loading */
+.add-to-cart-loader{
+  width: 300px;
+  height: 100px;
+  background: #f7f7f7;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -150px;
+  display: none;
+  text-align: center;
+  z-index: 9999;
+}
+.add-to-cart-loader img, .add-to-cart-loader .cart-updating-msg{
+  display: inline-block;
+  vertical-align: middle;
+}
+.add-to-cart-loader .cart-updating-msg{
+  font-size: 12px;
+  color: #3d4246;
+  font-weight: bold;
+}
+#shadow-layer {
+  position: fixed;
+  min-height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(67, 87, 121, 0.6);
+  cursor: pointer;
+  z-index:999;
+  display: none;
+}
+.score {
+  display: block;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.score-wrap {
+  display: inline-block;
+  position: relative;
+  height: 19px;
+}
+
+.score .stars-active {
+  color: #d58426;
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.score .stars-inactive {
+  color: grey;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-text-stroke: initial;
+  /* overflow: hidden; */
+}
